@@ -1,0 +1,198 @@
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+    position: relative;
+    top: 60px;
+    
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 5rem;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: .7s;
+}
+
+.hero-content span {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #00EEFF;
+}
+
+.home-sci a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #0ef;
+    text-decoration: none;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .7s;
+    margin: 30px 15px 30px 0;
+}
+
+.home-sci a:hover {
+    background: #0ef;
+    color: #000;
+    box-shadow: 0 0 20px #0ef;
+    transition: 0.4s;
+}
+
+.hero-content p {
+    width: 80%;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 2rem;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .7s;
+}
+
+
+.hero-img > img {
+    margin-top: 100px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: bottom;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: .7s;
+
+}
+
+.hero-img .container-icon {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-evenly;
+    
+}
+
+.hero-img .tech-icon img {
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: auto;
+}
+
+
+@media (max-width: 1025px) {
+    .hero-container h2 {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+        line-height: 1.6rem;
+    }
+    .hero-container {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 460px) {
+    .hero-container {
+        top: 0;
+    }
+    .hero-container h2 {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 2.3rem;
+        line-height: 3rem;
+        
+    }
+
+    .hero-content span {
+        font-size: 1.8rem;
+        margin-left: 10px;
+    }
+
+    .home-sci {
+        
+        display: flex;
+        justify-content: center;
+    }
+
+    .home-sci a{
+        text-align: center;
+    }
+
+    .hero-content p {
+        text-align: center;
+        width: 100%;
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+        margin-top: 20px;
+    }
+    .hero-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+
+    .hero-img > img {
+        margin-top: 20px;
+    }
+}
+
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideBottom {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}

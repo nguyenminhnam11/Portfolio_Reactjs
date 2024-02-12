@@ -1,0 +1,10 @@
+footer {
+    height: 10vh;
+    background: url(../../images/39607.jpg);
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+}
