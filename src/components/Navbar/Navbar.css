@@ -62,7 +62,7 @@
     opacity: 1;
 }
 
-.contact-btn {
+.resume-btn {
     font-size: 0.9rem;
     font-weight: 500;
     display: flex;
@@ -76,9 +76,10 @@
     border-radius: 0.2rem;
     cursor: pointer;
     transition: all 0.3s ease;
+    font-weight: bold;
 }
 
-.contact-btn:hover {
+.resume-btn:hover {
     color: #2196F3;
     background: #000;
     outline: 1.5px solid #2196F3;
@@ -99,6 +100,7 @@
     cursor: pointer;
     transition: all 0.4s ease;
     display: none;
+    
 }
 
 .menu-btn:hover {
