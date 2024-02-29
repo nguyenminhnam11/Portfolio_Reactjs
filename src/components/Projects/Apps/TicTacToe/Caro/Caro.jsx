@@ -30,7 +30,7 @@ function Caro(props) {
     <div className="caro">
     <h1>TicTacToe</h1>
       <Board cells={board} onClick={handleClick} />
-      <button onClick={handleNewGame}>New game</button>
+      <button className="reset-game" onClick={handleNewGame}>New game</button>
     </div>
   );
 }
