@@ -1,47 +1,26 @@
 import React from "react";
-import "./App.css";
 
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Education from "./components/Education";
-import Footer from "./components/Footer";
-import Hero from "./components/Hero";
-import Navbar from "./components/Navbar";
-import Skills from "./components/Skills";
-import Projects from "./components/Projects";
+import { Provider } from "react-redux";
+import store from "./store";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Portfolio from "./pages/Portfolio";
 
-import { ToastContainer } from "react-toastify";
+import Todo from "./components/Projects/Apps/Todo";
+import TicTacToe from "./components/Projects/Apps/TicTacToe";
 
 function App() {
   return (
-    <div>
-      <Navbar />
-      <div className="bg-hero">
-        <div className="container">
-          <Hero />
-        </div>
-      </div>
-      <div className="container-Advanced">
-        <About />
-        <Skills />
-        <Projects />
-        <Education />
-        <Contact />
-      </div>
-      <Footer />
-      <ToastContainer
-        position="bottom-right"
-        autoClose={5000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme="dark"
-      />
-    </div>
+    <Provider store={store}>
+      <BrowserRouter>
+
+        <Routes>
+          <Route path="/" element={<Portfolio />} />
+          <Route path="/todo" element={<Todo />} />
+          <Route path="/tictac" element={<TicTacToe />} />
+        </Routes>
+
+      </BrowserRouter>
+    </Provider>
   );
 }
 
