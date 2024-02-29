@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Navbar.css'
 import MenuIcon from '@mui/icons-material/Menu';
 import MobileNav from './MobileNav';
-import resume from '../../images/resume.pdf'
+import resume from '../../images/reactjs-resume.pdf'
 
 function Navbar() {
     const  [ openMenu, setOpenMenu ] = useState(false)
