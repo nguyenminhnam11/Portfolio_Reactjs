@@ -1,6 +1,6 @@
 import React from 'react';
 import './MobileNav.css'
-import resume from '../../../images/resume.pdf'
+import resume_reactjs from '../../../images/reactjs-resume.pdf'
 
 function MobileNav({ isOpen, toggleMenu}) {
     const handleScrollHome = () => {
@@ -41,7 +41,7 @@ function MobileNav({ isOpen, toggleMenu}) {
                         <li><p onClick={handleScrollEducate} className="menu-item">Education</p></li>
                         <li><p onClick={handleScrollContact} className="menu-item">Contact Me</p></li>
 
-                        <a style={{ textDecoration: 'none'}} href={resume} download='Resume-PDF' className="resume-btn">Resume<i class='bx bx-download' style={{ fontSize: '20px', marginLeft: '6px'}}></i></a>
+                        <a style={{ textDecoration: 'none'}} href={resume_reactjs} download='Resume-ReactJS-PDF' className="resume-btn">Resume<i class='bx bx-download' style={{ fontSize: '20px', marginLeft: '6px'}}></i></a>
                     </ul>
 
                 </div>

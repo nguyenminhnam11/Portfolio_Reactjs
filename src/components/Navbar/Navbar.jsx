@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Navbar.css'
 import MenuIcon from '@mui/icons-material/Menu';
 import MobileNav from './MobileNav';
-import resume from '../../images/reactjs-resume.pdf'
+import resume_reactjs from '../../images/reactjs-resume.pdf'
 
 function Navbar() {
     const  [ openMenu, setOpenMenu ] = useState(false)
@@ -65,7 +65,7 @@ function Navbar() {
                             <p className="menu-item"  onClick={handleScrollContact}>Contact Me</p>
                         </li>
 
-                        <a style={{ textDecoration: 'none'}} href={resume} download='Resume-PDF' className="resume-btn">Resume<i class='bx bx-download' style={{ fontSize: '20px', marginLeft: '6px'}}></i></a>
+                        <a style={{ textDecoration: 'none'}} href={resume_reactjs} download='Resume-ReactJS-PDF' className="resume-btn">Resume<i class='bx bx-download' style={{ fontSize: '20px', marginLeft: '6px'}}></i></a>
                     </ul>
                     <button class='menu-btn' onClick={(toggleMenu)}>
                         <MenuIcon>{openMenu ? "close" : "menu"}</MenuIcon>
