@@ -10,7 +10,7 @@ function Hero(props) {
 
     React.useEffect(() => {
         const typed = new Typed(el.current, {
-            strings: ['Frontend Developer','ReactJs Developer','Web Developer'],
+            strings: ['Frontend Developer','React Developer','Fullstack Developer'],
             typeSpeed:100,
             backSpeed:40,
             backDelay:1000,

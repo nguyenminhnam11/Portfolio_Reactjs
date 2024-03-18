@@ -48,7 +48,7 @@ function Skills(props) {
                             <div className='progress java'>
                             </div>
                             <div className='ruler'>
-                                <span className='unit'>50%</span>
+                                <span className='unit'>60%</span>
                             </div>
                         </div>
                     </div>
