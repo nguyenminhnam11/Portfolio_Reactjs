@@ -111,6 +111,7 @@
     display: flex;
     gap: 7px;
     padding: 0;
+    flex-wrap: wrap;
   }
 
   .tech div {

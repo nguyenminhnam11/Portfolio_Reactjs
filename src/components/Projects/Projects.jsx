@@ -6,6 +6,9 @@ import styled from "styled-components";
 
 import caro from "../../images/caro.png";
 import todo from "../../images/todoApp.png";
+import e_commerce from "../../images/E-commerce.png";
+import shopdunk from "../../images/shopdunk.png";
+
 const A = styled(Link)`
   text-decoration: none;
   background: #00ecfd;
@@ -109,22 +112,28 @@ function Projects(props) {
           </div>
           <div className="app">
             <div className="app-item">
-              <img src="" alt="" />
-              <h2>Calculator</h2>
+              <img src={e_commerce} alt="" />
+              <h2>UI E-commerce</h2>
               <p className="describe">
-                A calculator app is a digital tool for performing math
-                calculations on devices like smartphones and computers, used for
-                daily tasks and work
+                Simple interface for an online clothing selling site. And
+                compatible on all screens from computer to mobile
               </p>
               <div className="tech">
-                <div>React</div>
+                <div>HTML</div>
                 <div>CSS</div>
+                <div>Javascript</div>
+                <div>Responsive</div>
               </div>
               <div className="btn-projects">
-                <A href="">Demo</A>
+                <a
+                  href="https://e-commerce-ui-responsive.vercel.app/"
+                  target="_blank"
+                >
+                  Demo
+                </a>
                 <a
                   target="_blank"
-                  href="https://github.com/nguyenminhnam11/Todo_App.git"
+                  href="https://github.com/nguyenminhnam11/E-commerce_UI_responsive.git"
                   rel="noreferrer"
                 >
                   Source
@@ -134,126 +143,23 @@ function Projects(props) {
           </div>
           <div className="app">
             <div className="app-item">
-              <img src="" alt="" />
-              <h2>Clock & Counter</h2>
+              <img src={shopdunk} alt="" />
+              <h2>Shop Dunk</h2>
               <p className="describe">
-                This app integrates the functions of counting, watch and
-                stopwatch
+                Apple's sales store page interface and functions such as product
+                details and add to cart
               </p>
               <div className="tech">
                 <div>React</div>
-                <div>Redux</div>
-                <div>Styled-components</div>
+                <div>React Router</div>
+                <div>CSS</div>
+                <div>Ant-Design</div>
               </div>
               <div className="btn-projects">
-                <A href="">Demo</A>
+                <a href="https://shop-dunk-react-js.vercel.app/" target="_blank">Demo</a>
                 <a
                   target="_blank"
-                  href="https://github.com/nguyenminhnam11/Todo_App.git"
-                  rel="noreferrer"
-                >
-                  Source
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="app">
-            <div className="app-item">
-              <img src="" alt="" />
-              <h2>Todo List</h2>
-              <p className="describe">
-                A "to-do list" app is a task management tool that helps users
-                create lists of tasks, prioritize work, and track progress. It
-                is used to enhance personal organization and productivity
-              </p>
-              <div className="tech">
-                <div>React</div>
-                <div>Redux</div>
-                <div>Styled-components</div>
-              </div>
-              <div className="btn-projects">
-                <A href="">Demo</A>
-                <a
-                  target="_blank"
-                  href="https://github.com/nguyenminhnam11/Todo_App.git"
-                  rel="noreferrer"
-                >
-                  Source
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="app">
-            <div className="app-item">
-              <img src="" alt="" />
-              <h2>Todo List</h2>
-              <p className="describe">
-                A "to-do list" app is a task management tool that helps users
-                create lists of tasks, prioritize work, and track progress. It
-                is used to enhance personal organization and productivity.
-              </p>
-              <div className="tech">
-                <div>React</div>
-                <div>Redux</div>
-                <div>Styled-components</div>
-              </div>
-              <div className="btn-projects">
-                <A href="">Demo</A>
-                <a
-                  target="_blank"
-                  href="https://github.com/nguyenminhnam11/Todo_App.git"
-                  rel="noreferrer"
-                >
-                  Source
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="app">
-            <div className="app-item">
-              <img src="" alt="" />
-              <h2>Todo List</h2>
-              <p className="describe">
-                A "to-do list" app is a task management tool that helps users
-                create lists of tasks, prioritize work, and track progress. It
-                is used to enhance personal organization and productivity.
-              </p>
-              <div className="tech">
-                <div>React</div>
-                <div>Redux</div>
-                <div>Styled-components</div>
-              </div>
-              <div className="btn-projects">
-                <A href="">Demo</A>
-                <a
-                  target="_blank"
-                  href="https://github.com/nguyenminhnam11/Todo_App.git"
-                  rel="noreferrer"
-                >
-                  Source
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="app">
-            <div className="app-item">
-              <img src="" alt="" />
-              <h2>Todo List</h2>
-              <p className="describe">
-                A "to-do list" app is a task management tool that helps users
-                create lists of tasks, prioritize work, and track progress. It
-                is used to enhance personal organization and productivity.
-              </p>
-              <div className="tech">
-                <div>React</div>
-                <div>Redux</div>
-                <div>Styled-components</div>
-              </div>
-              <div className="btn-projects">
-                <A href="">Demo</A>
-                <a
-                  target="_blank"
-                  href="https://github.com/nguyenminhnam11/Todo_App.git"
+                  href="https://github.com/nguyenminhnam11/ShopDunk_ReactJS.git"
                   rel="noreferrer"
                 >
                   Source
