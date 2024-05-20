@@ -8,6 +8,7 @@ import caro from "../../images/caro.png";
 import todo from "../../images/todoApp.png";
 import e_commerce from "../../images/E-commerce.png";
 import shopdunk from "../../images/shopdunk.png";
+import { useTranslation } from "react-i18next";
 
 const A = styled(Link)`
   text-decoration: none;
@@ -52,10 +53,12 @@ function Projects(props) {
       },
     ],
   };
+
+  const {t} = useTranslation()
   return (
     <section className="projects">
       <h1>
-        <span>Project</span> and <span>Mini App</span>
+        <span>{t("proj-title-span1")}</span> {t("proj-title")} <span>{t("proj-title-span2")}</span>
       </h1>
       <div className="slider-container">
         <Slider {...settings}>
@@ -127,7 +130,7 @@ function Projects(props) {
               <div className="btn-projects">
                 <a
                   href="https://e-commerce-ui-responsive.vercel.app/"
-                  target="_blank"
+                  target="_blank" rel="noreferrer"
                 >
                   Demo
                 </a>

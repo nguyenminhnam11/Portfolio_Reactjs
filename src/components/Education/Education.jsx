@@ -3,11 +3,14 @@ import './Education.css'
 
 import logoFpt from '../../images/logo-fpt-polytechnic.png'
 import logoVti from '../../images/Logo-white.png'
+import { useTranslation } from 'react-i18next';
 
 function Education(props) {
+    const {t} = useTranslation()
+
     return (
         <section className='Wrapper'>
-            <h1><span>Education</span></h1>
+            <h1><span>{t('edu')}</span></h1>
 
             <div className='container-ex'>
 

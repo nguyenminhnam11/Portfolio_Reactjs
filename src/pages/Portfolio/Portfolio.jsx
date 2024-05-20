@@ -14,7 +14,6 @@ import Footer from '../../components/Footer';
 function Portfolio(props) {
     return (
         <div>
-            {/* Portfolio */}
         <Navbar />
         <div className="bg-hero">
           <div className="container">

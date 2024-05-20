@@ -1,14 +1,15 @@
 import React from 'react';
 import './Skills.css'
+import { useTranslation } from 'react-i18next';
 
 function Skills(props) {
+    const {t} = useTranslation()
     return (
         <section className='skills'>
-            <h1>My <span>Skills</span></h1>
+            <h1>{t("skill-title")} <span>{t("skill-title-span")}</span></h1>
             <div className='container'>
-
                 <div className='skills-item'>
-                    <h3>Technical skill</h3>
+                    <h3>{t("skill-tech")}</h3>
 
                     <div className='progress-bar'>
                         <div>
@@ -55,11 +56,11 @@ function Skills(props) {
                 </div>
 
                 <div className='skills-item'>
-                    <h3>Professional Skills</h3>
+                    <h3>{t("skill-pro")}</h3>
 
                     <div className='progress-bar second'>
                         <div>
-                            <span className='title-persional'>Creativity</span>
+                            <span className='title-persional'>{t("skill-pro-1")}</span>
                             <div className='progress creativity'>
                             </div>
                             <div className='ruler'>
@@ -67,7 +68,7 @@ function Skills(props) {
                             </div>
                         </div>
                         <div>
-                            <span className='title-persional'>Comunication</span>
+                            <span className='title-persional'>{t("skill-pro-2")}</span>
                             <div className='progress comunication'>
                             </div>
                             <div className='ruler'>
@@ -75,7 +76,7 @@ function Skills(props) {
                             </div>
                         </div>
                         <div>
-                            <span className='title-persional'>Problem solving</span>
+                            <span className='title-persional'>{t("skill-pro-3")}</span>
                             <div className='progress problem'>
                             </div>
                             <div className='ruler'>
@@ -83,7 +84,7 @@ function Skills(props) {
                             </div>
                         </div>
                         <div>
-                            <span className='title-persional'>TeamWork</span>
+                            <span className='title-persional'>{t("skill-pro-4")}</span>
                             <div className='progress teamWork'>
                             </div>
                             <div className='ruler'>

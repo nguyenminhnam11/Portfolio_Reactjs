@@ -1,8 +1,11 @@
 import React from 'react';
 import './MobileNav.css'
-import resume_reactjs from '../../../images/reactjs-resume.pdf'
+import resume_reactjs from '../../../images/reactjscvfresher.pdf'
+import { useTranslation } from 'react-i18next';
 
 function MobileNav({ isOpen, toggleMenu}) {
+    const {t} = useTranslation()
+
     const handleScrollHome = () => {
         window.scrollTo(0 , 0)
     }
@@ -34,12 +37,12 @@ function MobileNav({ isOpen, toggleMenu}) {
             >
                 <div className='mobile-menu-container'>
                     <ul>
-                        <li><p onClick={handleScrollHome} className="menu-item">Home</p></li>
-                        <li><p onClick={handleScrollAbout} className="menu-item">About</p></li>
-                        <li><p onClick={handleScrollSkills} className="menu-item">Skills</p></li>
-                        <li><p onClick={handleScrollProjects} className="menu-item">Projects</p></li>
-                        <li><p onClick={handleScrollEducate} className="menu-item">Education</p></li>
-                        <li><p onClick={handleScrollContact} className="menu-item">Contact Me</p></li>
+                        <li><p onClick={handleScrollHome} className="menu-item">{t('navbar-1')}</p></li>
+                        <li><p onClick={handleScrollAbout} className="menu-item">{t('navbar-2')}</p></li>
+                        <li><p onClick={handleScrollSkills} className="menu-item">{t('navbar-3')}</p></li>
+                        <li><p onClick={handleScrollProjects} className="menu-item">{t('navbar-4')}</p></li>
+                        <li><p onClick={handleScrollEducate} className="menu-item">{t('navbar-5')}</p></li>
+                        <li><p onClick={handleScrollContact} className="menu-item">{t('navbar-6')}</p></li>
 
                         <a style={{ textDecoration: 'none'}} href={resume_reactjs} download='Resume-ReactJS-PDF' className="resume-btn">Resume<i class='bx bx-download' style={{ fontSize: '20px', marginLeft: '6px'}}></i></a>
                     </ul>

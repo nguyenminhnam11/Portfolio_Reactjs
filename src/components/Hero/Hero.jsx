@@ -4,9 +4,12 @@ import './Hero.css'
 import ImgMe from '../../images/Screenshot 2024-01-03 001903.png'
 
 import Typed from 'typed.js';
+import { useTranslation } from 'react-i18next';
 
 function Hero(props) {
-        const el = React.useRef(null);
+    const {t} = useTranslation()
+
+    const el = React.useRef(null);
 
     React.useEffect(() => {
         const typed = new Typed(el.current, {
@@ -26,11 +29,9 @@ function Hero(props) {
     return (
         <section className='hero-container'>
             <div className='hero-content'>
-                <h2>Hello, I'm Nguyen Minh Nam</h2>
+                <h2>{t("hero-title")}</h2>
                 <span ref={el} />
-                <p>Welcome to my portfolio! I'm a Front-end Developer with a specialization in React.js. 
-                My commitment lies in crafting user-friendly interfaces to create exceptional websites. 
-                Feel free to explore more about me on my linked social media profiles.
+                <p>{t("hero-text")}
                 </p>
                 <div class="home-sci">
                     <a href="https://www.facebook.com/nmnam11react" ><i class='bx bxl-facebook-circle'></i></a>

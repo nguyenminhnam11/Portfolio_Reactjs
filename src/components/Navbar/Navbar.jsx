@@ -1,79 +1,113 @@
-import React, { useState } from 'react';
-import './Navbar.css'
-import MenuIcon from '@mui/icons-material/Menu';
-import MobileNav from './MobileNav';
-import resume_reactjs from '../../images/reactjs-resume.pdf'
+import React, { useState } from "react";
+import "./Navbar.css";
+import MenuIcon from "@mui/icons-material/Menu";
+import MobileNav from "./MobileNav";
+import resume_reactjs from "../../images/reactjscvfresher.pdf";
+import { useTranslation } from "react-i18next";
+import SwitchLang from "./SwitchLang";
+
 
 function Navbar() {
-    const  [ openMenu, setOpenMenu ] = useState(false)
+  const {t} = useTranslation()
 
-    const toggleMenu = () => {
-        setOpenMenu(!openMenu)
-    }
+  const [openMenu, setOpenMenu] = useState(false);
 
-    const handleScrollHome = () => {
-        window.scrollTo(0 , 0)
-    }
+  const toggleMenu = () => {
+    setOpenMenu(!openMenu);
+  };
 
-    const handleScrollAbout = () => {
-        window.scrollTo(0 , 750)
-    }
-    const handleScrollSkills = () => {
-        window.scrollTo(0 , 1390)
-    }
-    const handleScrollProject = () => {
-        window.scrollTo(0 , 2140)
-    }
-    
-    const handleScrollE = () => {
-        window.scrollTo(0 , 2860)
-    }
+  const handleScrollHome = () => {
+    window.scrollTo(0, 0);
+  };
 
-    const handleScrollContact = () => {
-        window.scrollTo(0 , 3500)
-    }
+  const handleScrollAbout = () => {
+    window.scrollTo(0, 750);
+  };
+  const handleScrollSkills = () => {
+    window.scrollTo(0, 1390);
+  };
+  const handleScrollProject = () => {
+    window.scrollTo(0, 2140);
+  };
 
-    return (
-        <>
-            <MobileNav isOpen={openMenu} toggleMenu={toggleMenu} />
+  const handleScrollE = () => {
+    window.scrollTo(0, 2860);
+  };
 
-            <nav className='nav-wrapper'>
-                <div className='nav-content'>
-                    <p className="logo" onClick={handleScrollHome}>Portfolio</p>
-                    <ul>
-                        <li>
-                            <p className="menu-item" onClick={handleScrollHome}>Home</p>
-                        </li>
+  const handleScrollContact = () => {
+    window.scrollTo(0, 3500);
+  };
 
-                        <li>
-                            <p className="menu-item" onClick={handleScrollAbout}>About</p>
-                        </li>
+  return (
+    <>
+      <MobileNav isOpen={openMenu} toggleMenu={toggleMenu} />
 
-                        <li>
-                            <p className="menu-item"  onClick={handleScrollSkills}>Skills</p>
-                        </li>
+      <nav className="nav-wrapper">
+        <div className="nav-content">
+          <p className="logo" onClick={handleScrollHome}>
+            Portfolio
+          </p>
+          <ul>
+            <li>
+              <p className="menu-item" onClick={handleScrollHome}>
+                {t('navbar-1')}
+              </p>
+            </li>
 
-                        <li>
-                            <p className="menu-item"  onClick={handleScrollProject}>Projects</p>
-                        </li>
+            <li>
+              <p className="menu-item" onClick={handleScrollAbout}>
+                {t('navbar-2')}
+              </p>
+            </li>
 
-                        <li>
-                            <p className="menu-item"  onClick={handleScrollE}>Education</p>
-                        </li>
+            <li>
+              <p className="menu-item" onClick={handleScrollSkills}>
+                {t('navbar-3')}
+              </p>
+            </li>
 
-                        <li>
-                            <p className="menu-item"  onClick={handleScrollContact}>Contact Me</p>
-                        </li>
+            <li>
+              <p className="menu-item" onClick={handleScrollProject}>
+                {t('navbar-4')}
+              </p>
+            </li>
 
-                        <a style={{ textDecoration: 'none'}} href={resume_reactjs} download='Resume-ReactJS-PDF' className="resume-btn">Resume<i class='bx bx-download' style={{ fontSize: '20px', marginLeft: '6px'}}></i></a>
-                    </ul>
-                    <button class='menu-btn' onClick={(toggleMenu)}>
-                        <MenuIcon>{openMenu ? "close" : "menu"}</MenuIcon>
-                    </button>
-                </div>
-            </nav>
-        </>
-    );
+            <li>
+              <p className="menu-item" onClick={handleScrollE}>
+                {t('navbar-5')}
+              </p>
+            </li>
+
+            <li>
+              <p className="menu-item" onClick={handleScrollContact}>
+                {t('navbar-6')}
+              </p>
+            </li>
+
+            <li>
+              <SwitchLang />
+            </li>
+
+            <a
+              style={{ textDecoration: "none" }}
+              href={resume_reactjs}
+              download="Resume-ReactJS-PDF"
+              className="resume-btn"
+            >
+              Resume
+              <i
+                class="bx bx-download"
+                style={{ fontSize: "20px", marginLeft: "6px" }}
+              ></i>
+            </a>
+          </ul>
+          <button class="menu-btn" onClick={toggleMenu}>
+            <MenuIcon>{openMenu ? "close" : "menu"}</MenuIcon>
+          </button>
+        </div>
+      </nav>
+    </>
+  );
 }
 
 export default Navbar;

@@ -1,7 +1,10 @@
 import React from 'react';
 import './About.css'
 import AboutImg from '../../images/z5023739927672_757efb7d985469d571c96d3cb58a268a.jpg'
+import { useTranslation } from 'react-i18next';
 function About(props) {
+    const {t} = useTranslation()
+
     return (
         <div className='container-about'>
             <div className='about-img'>
@@ -17,14 +20,9 @@ function About(props) {
                 </div>
             </div>
             <div className='content'>
-                <h1>About <span>Me</span></h1>
+                <h1>{t("about-title")} <span>{t("about-title-span")}</span></h1>
                 <h3>Frontend developer - <span style={{ color: '#0ef' }}>Reactjs</span></h3>
-                <p>Hello there! My name is Nguyen Minh Nam, and I am a passionate and motivated React.js Developer. 
-                As a recent graduate, I am entering the dynamic world of web development with a fresh perspective 
-                and a hunger for learning. My journey with React.js has been an exciting exploration of crafting 
-                interactive and efficient user interfaces. I am eager to contribute and collaborate on innovative 
-                projects and am committed to continuously enhancing my skills and staying abreast of the latest industry trends. 
-                </p>
+                <p>{t("about-text")}</p>
             </div>
         </div>
     );
