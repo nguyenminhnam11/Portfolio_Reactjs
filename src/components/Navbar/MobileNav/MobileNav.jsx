@@ -1,6 +1,6 @@
 import React from 'react';
 import './MobileNav.css'
-import resume_reactjs from '../../../images/reactjscvfresher.pdf'
+import resume_reactjs from '../../../images/frontEnd_CV_en.pdf'
 import { useTranslation } from 'react-i18next';
 
 function MobileNav({ isOpen, toggleMenu}) {

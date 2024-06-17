@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Navbar.css";
 import MenuIcon from "@mui/icons-material/Menu";
 import MobileNav from "./MobileNav";
-import resume_reactjs from "../../images/reactjscvfresher.pdf";
+import resume_reactjs from "../../images/frontEnd_CV_en.pdf";
 import { useTranslation } from "react-i18next";
 import SwitchLang from "./SwitchLang";
 

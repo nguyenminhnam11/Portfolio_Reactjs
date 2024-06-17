@@ -55,7 +55,7 @@ function Contact(props) {
             <input type="email" name="email" placeholder={t('email')} />
           </div>
           <div class="item4">
-            <input type="text" name="message" placeholder={t('message')} />
+            <textarea rows={4} type="text" name="message" placeholder={t('message')} />
           </div>
           <button type="submit" class="item5">
             {t('send-btn')}

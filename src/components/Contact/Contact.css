@@ -73,7 +73,7 @@
     'email email email email'
     'mess mess mess mess'
     'btn btn btn btn';
-  gap: 10px;
+    column-gap: 15px;
   opacity: 0;
     animation: slideLeft 1s ease forwards;
     animation-delay: 2s;
@@ -85,7 +85,7 @@
   font-size: 30px;
 }
 
-.form-field > div > input {
+.form-field > div > input,textarea {
     width: 100%;
     background: transparent;
     border: 1px solid #2196F3;
