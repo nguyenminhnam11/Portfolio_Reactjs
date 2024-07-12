@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Navbar.css";
+import "./Navbar.scss";
 import MenuIcon from "@mui/icons-material/Menu";
 import MobileNav from "./MobileNav";
 import resume_reactjs from "../../images/frontEnd_CV_en.pdf";

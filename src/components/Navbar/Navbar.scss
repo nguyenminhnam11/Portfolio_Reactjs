@@ -23,15 +23,17 @@
     color: #FFF;
 }
 
-.nav-content ul {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    list-style: none;
-}
+.nav-content {
+    ul {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        list-style: none;
+    }
 
-.nav-content li {
-    margin: 0 1.5rem;
+    li {
+        margin: 0 1.5rem;
+    }
 }
 
 .menu-item {
@@ -41,25 +43,25 @@
     color: #fff;
     position: relative;
     cursor: pointer;
-}
 
-.menu-item::before {
-    content: ' ';
-    width: 2rem;
-    height: 0.2rem;
-    background: linear-gradient(90deg, #0ef, #2196F3 100%);
-    border-radius: 0.5rem;
-    position: absolute;
-    bottom: -0.6rem;
-    opacity: 0;
-    transform: translateX(-1.5rem);
-    transition: all 0.3s ease;
-}
+    &::before {
+        content: ' ';
+        width: 2rem;
+        height: 0.2rem;
+        background: linear-gradient(90deg, #0ef, #2196F3 100%);
+        border-radius: 0.5rem;
+        position: absolute;
+        bottom: -0.6rem;
+        opacity: 0;
+        transform: translateX(-1.5rem);
+        transition: all 0.3s ease;
+    }
 
-.menu-item:hover::before {
-    width: 100%;
-    transform: translateX(0);
-    opacity: 1;
+    &:hover::before {
+        width: 100%;
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .resume-btn {
@@ -77,12 +79,12 @@
     cursor: pointer;
     transition: all 0.3s ease;
     font-weight: bold;
-}
 
-.resume-btn:hover {
-    color: #2196F3;
-    background: #000;
-    outline: 1.5px solid #2196F3;
+    &:hover {
+        color: #2196F3;
+        background: #000;
+        outline: 1.5px solid #2196F3;
+    }
 }
 
 .menu-btn {
@@ -101,12 +103,11 @@
     transition: all 0.4s ease;
     display: none;
     
-}
-
-.menu-btn:hover {
-    color: #2196F3;
-    background: #000;
-    border: 1px solid #2196F3;
+    &:hover {
+        color: #2196F3;
+        background: #000;
+        border: 1px solid #2196F3;
+    }
 }
 
 @media (max-width: 769px) {

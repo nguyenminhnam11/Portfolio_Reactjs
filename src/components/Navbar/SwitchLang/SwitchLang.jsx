@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import languages from "../../../assets/data/language.js";
 import i18next from "i18next";
-import './SwitchLang.css'
+import './SwitchLang.scss'
 
 function SwitchLang(props) {
     const [selectedLanguage, setSelectedLanguage] = useState(i18next.language);

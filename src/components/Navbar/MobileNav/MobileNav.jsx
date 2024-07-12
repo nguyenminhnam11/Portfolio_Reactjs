@@ -1,5 +1,5 @@
 import React from 'react';
-import './MobileNav.css'
+import './MobileNav.scss'
 import resume_reactjs from '../../../images/frontEnd_CV_en.pdf'
 import { useTranslation } from 'react-i18next';
 

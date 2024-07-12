@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
-import "./Projects.css";
+import "./Projects.scss";
 import { useTranslation } from "react-i18next";
 import projects from "../../assets/data/projects";
 

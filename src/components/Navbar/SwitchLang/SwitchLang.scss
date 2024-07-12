@@ -1,0 +1,31 @@
+/* Đặt kiểu cho thẻ select */
+.ui.dropdown {
+  width: 60px;
+  padding: 4px;
+  border: 1px solid #265193;
+  border-radius: 4px;
+  background-color: transparent;
+  font-size: 12px;
+  color: #fff;
+  cursor: pointer;
+  transition: .2s;
+
+  /* Đặt kiểu cho thẻ option */
+  option {
+    padding: 10px;
+    background-color: #FFF;
+    color: #265193;
+    border: none;
+    cursor: pointer;
+  }
+
+  /* Thêm hiệu ứng hover */
+  &:hover {
+    border-color: #00EEFF;
+  }
+
+  &:focus {
+    border-color: #265193;
+    outline: none;
+  }
+}

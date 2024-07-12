@@ -1,5 +1,5 @@
 import React from 'react';
-import './About.css'
+import './About.scss'
 import AboutImg from '../../images/z5023739927672_757efb7d985469d571c96d3cb58a268a.jpg'
 import { useTranslation } from 'react-i18next';
 function About(props) {

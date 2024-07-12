@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import "./Contact.css";
+import "./Contact.scss";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
 import { useTranslation } from "react-i18next";

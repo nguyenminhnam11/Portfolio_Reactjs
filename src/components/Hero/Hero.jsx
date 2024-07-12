@@ -1,5 +1,5 @@
 import React from 'react';
-import './Hero.css'
+import './Hero.scss'
 
 import ImgMe from '../../images/Screenshot 2024-01-03 001903.png'
 

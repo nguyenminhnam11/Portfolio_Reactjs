@@ -1,5 +1,5 @@
 import React from 'react';
-import './Skills.css'
+import './Skills.scss'
 import { useTranslation } from 'react-i18next';
 
 function Skills(props) {

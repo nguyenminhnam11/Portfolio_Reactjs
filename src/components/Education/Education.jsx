@@ -1,5 +1,5 @@
 import React from 'react';
-import './Education.css'
+import './Education.scss'
 
 import logoFpt from '../../images/logo-fpt-polytechnic.png'
 import logoVti from '../../images/Logo-white.png'
