@@ -2,6 +2,7 @@ import vatvo from '../../images/vatvoshop.png'
 import clock from '../../images/clock.png'
 import todo from '../../images/todolist.png'
 import shopeefood from '../../images/shopeefood.png'
+import face from '../../images/faceai.jpg'
 
 const projects = [  
     {
@@ -29,6 +30,14 @@ const projects = [
         git: "https://github.com/nguyenminhnam11/ShopeeFood"
     },
     {
+        name: "Face Touch App",
+        image: face,
+        description: "This is a simple app using AI library that can scan faces and alert when touching face.",
+        tech: ["React", "CSS", "Mobilenet library", "Howler library"],
+        url: "https://face-touch-app.vercel.app/",
+        git: "https://github.com/nguyenminhnam11/Face-Touch-App"
+    },
+    {
         name: "Clock App (Developing)",
         image: clock,
         description: "Is a clock application that includes features. Also has the ability to view battery percentage and charge status based on the computer's battery.",
@@ -36,6 +45,7 @@ const projects = [
         url: "https://clock-app-nine-sigma.vercel.app/",
         git: "https://github.com/nguyenminhnam11/Clock-App"
     }
+    
 ]
 
 export default projects
