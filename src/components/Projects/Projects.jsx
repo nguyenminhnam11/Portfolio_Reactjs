@@ -56,7 +56,7 @@ function Projects(props) {
                 <h2>{project.name}</h2>
                 <p className="describe">{project.description}</p>
                 <div className="tech">
-                  {project.tech.map((item,index) => (
+                  {project.tech.map((item, index) => (
                     <div key={index}>{item}</div>
                   ))}
                 </div>
@@ -66,7 +66,7 @@ function Projects(props) {
                   </a>
                   <a
                     target="_blank"
-                    href="https://github.com/nguyenminhnam11/E-commerce_UI_responsive.git"
+                    href={project.git}
                     rel="noreferrer"
                   >
                     Source
