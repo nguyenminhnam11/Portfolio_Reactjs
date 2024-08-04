@@ -2,7 +2,7 @@ import vatvo from '../../images/vatvoshop.png'
 import todo from '../../images/todolist.png'
 import shopeefood from '../../images/shopeefood.png'
 import face from '../../images/faceai.jpg'
-import crud from '../../images/clock.png'
+import crud from '../../images/crud.png'
 
 const projects = [  
     {
@@ -45,15 +45,6 @@ const projects = [
         url: "https://crud-basic-reactjs.vercel.app/",
         git: "https://github.com/nguyenminhnam11/CRUD_Basic_reactjs"
     }
-    // {
-    //     name: "Clock App (Developing)",
-    //     image: clock,
-    //     description: "Is a clock application that includes features. Also has the ability to view battery percentage and charge status based on the computer's battery.",
-    //     tech: ["React", "CSS", "React-use", "Responsive"],
-    //     url: "https://clock-app-nine-sigma.vercel.app/",
-    //     git: "https://github.com/nguyenminhnam11/Clock-App"
-    // }
-    
 ]
 
 export default projects
